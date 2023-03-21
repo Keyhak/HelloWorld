@@ -16,9 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HelloWorld" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqZ-rz-BRh">
-                                <rect key="frame" x="155" y="300" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqZ-rz-BRh">
+                                <rect key="frame" x="153" y="159" width="87" height="303"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="HelloWorld">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鳴き声" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct5-s1-GKq">
+                                <rect key="frame" x="169" y="209" width="55" height="21.666666666666657"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -28,13 +40,19 @@
                         <constraints>
                             <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="01G-RJ-Me7"/>
                             <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1I1-Mp-djH"/>
-                            <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-115.5" id="2Yz-ku-drD"/>
                             <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5xS-I6-bOP"/>
                             <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A7h-i9-XGd"/>
+                            <constraint firstItem="Ct5-s1-GKq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Dfy-g2-cyu"/>
+                            <constraint firstItem="Ct5-s1-GKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cud-jD-7QX"/>
+                            <constraint firstItem="XqZ-rz-BRh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="eGG-lf-g8p"/>
                             <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-115.5" id="hut-t0-685"/>
                             <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vqj-gy-Vxo"/>
+                            <constraint firstItem="XqZ-rz-BRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zuI-77-zld"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Ct5-s1-GKq" id="115-sS-9fq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
