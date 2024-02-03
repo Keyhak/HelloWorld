@@ -15,7 +15,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func dogButton(_ sender: Any) {
+    @IBAction func dogBtn(_ sender: Any) {
         label.text = "ワンワン"
+    }
+
+    @IBAction func catBtn(_ sender: Any) {
+        label.text = "ニャーニャー"
+    }
+
+    @IBAction func frogBtn(_ sender: Any) {
+        label.text = "ゲロゲロ"
     }
 }
